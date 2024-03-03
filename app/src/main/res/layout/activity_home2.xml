@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Home2Activity">
+
+    <Button
+        android:id="@+id/accepted"
+        android:layout_width="255dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="104dp"
+        android:text="Accepted Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="255dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:text="Completed Order"
+        app:layout_constraintEnd_toEndOf="@+id/picked"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/picked"
+        app:layout_constraintTop_toBottomOf="@+id/picked" />
+
+    <Button
+        android:id="@+id/picked"
+        android:layout_width="255dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="28dp"
+        android:text="On Delivery"
+        app:layout_constraintEnd_toEndOf="@+id/accepted"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/accepted"
+        app:layout_constraintTop_toBottomOf="@+id/accepted" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
